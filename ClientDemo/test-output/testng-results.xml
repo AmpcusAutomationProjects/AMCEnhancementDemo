@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61502" started-at="2018-12-11T13:55:27Z" finished-at="2018-12-11T13:56:28Z">
+  <suite name="Default suite" duration-ms="138559" started-at="2018-12-11T15:43:30Z" finished-at="2018-12-11T15:45:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61502" started-at="2018-12-11T13:55:27Z" finished-at="2018-12-11T13:56:28Z">
+    <test name="Default test" duration-ms="138559" started-at="2018-12-11T15:43:30Z" finished-at="2018-12-11T15:45:49Z">
       <class name="com.demoTestScripts.DisableAndEnableUsers">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.demoTestScripts.DisableAndEnableUsers@80503]" name="beforeTest" is-config="true" duration-ms="8460" started-at="2018-12-11T13:55:27Z" finished-at="2018-12-11T13:55:36Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.demoTestScripts.DisableAndEnableUsers@467aecef]" name="beforeTest" is-config="true" duration-ms="9428" started-at="2018-12-11T15:43:31Z" finished-at="2018-12-11T15:43:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="UM_Verify_Impact_of_Removing_Functional_Role_050A(java.lang.String, java.lang.String)[pri:0, instance:com.demoTestScripts.DisableAndEnableUsers@80503]" name="UM_Verify_Impact_of_Removing_Functional_Role_050A" duration-ms="45268" started-at="2018-12-11T13:55:36Z" data-provider="wordpressData" finished-at="2018-12-11T13:56:21Z">
+        <test-method status="PASS" signature="disable_And_Enable_User(java.lang.String, java.lang.String)[pri:0, instance:com.demoTestScripts.DisableAndEnableUsers@467aecef]" name="disable_And_Enable_User" duration-ms="122100" started-at="2018-12-11T15:43:40Z" data-provider="wordpressData" finished-at="2018-12-11T15:45:42Z">
           <params>
             <param index="0">
               <value>
@@ -26,12 +26,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UM_Verify_Impact_of_Removing_Functional_Role_050A -->
-        <test-method status="PASS" signature="afterAllTestComplete(org.testng.ITestResult)[pri:0, instance:com.demoTestScripts.DisableAndEnableUsers@80503]" name="afterAllTestComplete" is-config="true" duration-ms="7360" started-at="2018-12-11T13:56:21Z" finished-at="2018-12-11T13:56:28Z">
+        </test-method> <!-- disable_And_Enable_User -->
+        <test-method status="PASS" signature="afterAllTestComplete(org.testng.ITestResult)[pri:0, instance:com.demoTestScripts.DisableAndEnableUsers@467aecef]" name="afterAllTestComplete" is-config="true" duration-ms="6576" started-at="2018-12-11T15:45:42Z" finished-at="2018-12-11T15:45:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UM_Verify_Impact_of_Removing_Functional_Role_050A status=SUCCESS method=DisableAndEnableUsers.UM_Verify_Impact_of_Removing_Functional_Role_050A(java.lang.String, java.lang.String)[pri:0, instance:com.demoTestScripts.DisableAndEnableUsers@80503] output={null}]]]>
+                <![CDATA[[TestResult name=disable_And_Enable_User status=SUCCESS method=DisableAndEnableUsers.disable_And_Enable_User(java.lang.String, java.lang.String)[pri:0, instance:com.demoTestScripts.DisableAndEnableUsers@467aecef] output={null}]]]>
               </value>
             </param>
           </params>

@@ -2,6 +2,7 @@ package com.demoTestScripts;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -16,29 +17,33 @@ public class DisableAndEnableUsers extends UtilityClass{
 	driver.get("https://myuat.ginniemae.gov");
 	Thread.sleep(4000);
 	demoLib.fluentWait(By.id("T:j_id__ctru15pc14")).click(); // Click on Login
+	Thread.sleep(4000);
 
-	demoLib.fluentWait(By.id("username")).sendKeys(username); // Enter UserName
+	 
+	driver.findElement(By.id("username")).sendKeys(username); // Enter UserName
 	Thread.sleep(4000);
-	demoLib.fluentWait(By.id("password")).sendKeys(password); // Password
-	Thread.sleep(4000);
-	demoLib.fluentWait(By.cssSelector(".submit")).click(); // Click on Login
+	 
+	driver.findElement(By.id("password")).sendKeys(password); // Password
+	Thread.sleep(4000); 
+	
+	driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/fieldset/input[6]")).click();
 	Thread.sleep(10000);
 	
-//	demoLib.fluentWait(By.cssSelector("#T\\:toolslink > div:nth-child(2)")).click(); // Click on Tools
-//	Thread.sleep(4000);
-//	
-//	driver.findElement(By.id("T:ti1:0:ti2:0:ti3:3:linkGenWrn")).click(); //click on amc
-//	Thread.sleep(4000);
-//	
-//	driver.findElement(By.id("T:gWYes")).click(); //click Yes to continue
-//	Thread.sleep(7000);
-//	  
-//	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div[2]/div/div/button[4]")).click();//click user management tab
-//	Thread.sleep(5000);
-//	
-//	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[4]/div/table/tbody/tr[5]/td[2]/a")).click();//click on user
-//	Thread.sleep(9000);
-//	
+	demoLib.fluentWait(By.cssSelector("#T\\:toolslink > div:nth-child(2)")).click(); // Click on Tools
+	Thread.sleep(4000);
+	
+	driver.findElement(By.id("T:ti1:0:ti2:0:ti3:3:linkGenWrn")).click(); //click on amc
+	Thread.sleep(4000);
+	
+	driver.findElement(By.id("T:gWYes")).click(); //click Yes to continue
+	Thread.sleep(10000);
+	  
+	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div[2]/div/div/button[4]")).click();//click user management tab
+	Thread.sleep(9000);
+	
+	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[4]/div/table/tbody/tr[9]/td[2]/a")).click();//click on user Harris Wood
+	Thread.sleep(9000);
+	
 //	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[2]/div/div[1]/a")).click();//highlight and click on disable user
 //	Thread.sleep(9000);
 //	
@@ -51,10 +56,19 @@ public class DisableAndEnableUsers extends UtilityClass{
 //	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[9]/div/div/div[3]/button[2]")).click();//click confirm
 //	Thread.sleep(10000);
 //	
-//	WebElement revoked = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[2]/div/div[2]/div/div[1]/form/fieldset/table/tbody/tr[1]/td[4]"));
-//	demoLib.highlightElement(revoked);
-//	Thread.sleep(4000);
-//	
+	Actions action = new Actions(driver);
+	
+	WebElement disableUser= driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[1]/div/div[2]/div/form/div/button[4]"));// Highlights Disable button and click
+	action.moveToElement(disableUser);
+	demoLib.highlightElement(disableUser);
+	disableUser.click();
+	Thread.sleep(4000);
+	
+	WebElement confirmBtn = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[6]/div/div/div[3]/button[2]")); // Highlights Confirm button and click
+	demoLib.highlightElement(confirmBtn);
+	//confirmBtn.click();
+	Thread.sleep(5000);
+	
 //	WebElement reRequest = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[2]/div/div[2]/div/div[1]/form/fieldset/div[3]/button[2]"));//
 //	Thread.sleep(3000);
 //	
