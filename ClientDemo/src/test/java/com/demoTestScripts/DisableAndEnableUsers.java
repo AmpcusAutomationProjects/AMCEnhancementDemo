@@ -53,10 +53,10 @@ public class DisableAndEnableUsers extends UtilityClass{
 	disableElem.click();
 	Thread.sleep(9000);
 	
-	WebElement confirmBtn1 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[6]/div/div/div[3]/button[2]")); // Highlight confirm btn and click
+	WebElement confirmBtn1 = driver.findElement(By.cssSelector("#modalex-disable > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > button:nth-child(2)")); // Highlight confirm btn and click
 	demoLib.highlightElement(confirmBtn1);
 	confirmBtn1.click();
-	Thread.sleep(20000);
+	Thread.sleep(20000);  
 	
 	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/button[2]")).click(); //Click the Back btn
 	Thread.sleep(9000);
@@ -80,7 +80,7 @@ public class DisableAndEnableUsers extends UtilityClass{
 	enableElem.click();
 	Thread.sleep(9000);
 	
-	WebElement confirmBtn2 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[7]/div/div/div[3]/button[2]")); // Highlight confirm btn and click
+	WebElement confirmBtn2 = driver.findElement(By.cssSelector("#modalex-enable > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > button:nth-child(2)")); // Highlight confirm btn and click
 	demoLib.highlightElement(confirmBtn2);
 	confirmBtn2.click();
 	Thread.sleep(20000);
