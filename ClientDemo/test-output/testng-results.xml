@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="138559" started-at="2018-12-11T15:43:30Z" finished-at="2018-12-11T15:45:49Z">
+  <suite name="Default suite" duration-ms="137339" started-at="2018-12-11T16:40:44Z" finished-at="2018-12-11T16:43:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="138559" started-at="2018-12-11T15:43:30Z" finished-at="2018-12-11T15:45:49Z">
+    <test name="Default test" duration-ms="137339" started-at="2018-12-11T16:40:44Z" finished-at="2018-12-11T16:43:01Z">
       <class name="com.demoTestScripts.DisableAndEnableUsers">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.demoTestScripts.DisableAndEnableUsers@467aecef]" name="beforeTest" is-config="true" duration-ms="9428" started-at="2018-12-11T15:43:31Z" finished-at="2018-12-11T15:43:40Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.demoTestScripts.DisableAndEnableUsers@467aecef]" name="beforeTest" is-config="true" duration-ms="9188" started-at="2018-12-11T16:40:44Z" finished-at="2018-12-11T16:40:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="disable_And_Enable_User(java.lang.String, java.lang.String)[pri:0, instance:com.demoTestScripts.DisableAndEnableUsers@467aecef]" name="disable_And_Enable_User" duration-ms="122100" started-at="2018-12-11T15:43:40Z" data-provider="wordpressData" finished-at="2018-12-11T15:45:42Z">
+        <test-method status="PASS" signature="disable_And_Enable_User(java.lang.String, java.lang.String)[pri:0, instance:com.demoTestScripts.DisableAndEnableUsers@467aecef]" name="disable_And_Enable_User" duration-ms="121401" started-at="2018-12-11T16:40:53Z" data-provider="wordpressData" finished-at="2018-12-11T16:42:55Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disable_And_Enable_User -->
-        <test-method status="PASS" signature="afterAllTestComplete(org.testng.ITestResult)[pri:0, instance:com.demoTestScripts.DisableAndEnableUsers@467aecef]" name="afterAllTestComplete" is-config="true" duration-ms="6576" started-at="2018-12-11T15:45:42Z" finished-at="2018-12-11T15:45:49Z">
+        <test-method status="PASS" signature="afterAllTestComplete(org.testng.ITestResult)[pri:0, instance:com.demoTestScripts.DisableAndEnableUsers@467aecef]" name="afterAllTestComplete" is-config="true" duration-ms="6316" started-at="2018-12-11T16:42:55Z" finished-at="2018-12-11T16:43:01Z">
           <params>
             <param index="0">
               <value>
