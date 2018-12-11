@@ -9,9 +9,8 @@ import org.apache.commons.mail.EmailAttachment;
 import org.apache.commons.mail.MultiPartEmail;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -31,14 +30,14 @@ public class UtilityClass {
 	static ExtentReports extent = new ExtentReports();
 	static ExtentTest test;
 	
-	@BeforeTest(alwaysRun = true)
+	@BeforeMethod(alwaysRun = true)
 	public void beforeTest() throws Exception  {
  
 		demoLib = new Library(driver);
 		driver = demoLib.startLocalBrowser();
 
 	}
-	@AfterTest(alwaysRun = true)
+	@AfterMethod(alwaysRun = true)
 	public void afterAllTestComplete(ITestResult result) throws Exception {
 		extent.attachReporter(htmlReporter);
 
