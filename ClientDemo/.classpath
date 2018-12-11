@@ -27,5 +27,25 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/commons-compress-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/commons-compress-1.18-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/commons-compress-1.18-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/commons-compress-1.18-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/commons-compress-1.18-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/commons-fileupload-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/poi-scratchpad-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joseph.quansah/Documents/Apache/xmlbeans-2.6.0-source.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
