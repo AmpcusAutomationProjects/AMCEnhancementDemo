@@ -86,10 +86,7 @@ public class UtilityClass {
 		emails.setSubject("Test Report");
 		emails.setMsg("HTML Report with a link to download test video");
 		emails.addTo("joseph.quansah@ampcus.com", "Joseph");
-		// emails.addBcc("fatema.akhtar@ampcus.com", "Fatema");
-		// emails.addBcc("veena.pradeep@ampcus.com", "Veena");
-		// emails.addBcc("rohit.lal@ampcus.com", "Rohit");
-		// emails.addBcc("oma.taiga@ampcus.com", "Oma");
+		 
 		// add the attachment
 		emails.attach(attachment);
 		// send the email
