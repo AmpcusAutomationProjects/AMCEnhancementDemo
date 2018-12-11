@@ -22,13 +22,14 @@ public class DisableAndEnableUsers extends UtilityClass{
 
 	 
 	driver.findElement(By.id("username")).sendKeys(username); // Enter UserName
-	Thread.sleep(4000);
+	Thread.sleep(3000);
 	 
 	driver.findElement(By.id("password")).sendKeys(password); // Password
-	Thread.sleep(4000); 
+	Thread.sleep(3000); 
 	
 	driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/fieldset/input[6]")).click(); //Click Login
-	Thread.sleep(10000);
+	                             
+	Thread.sleep(30000);
 	
 	demoLib.fluentWait(By.cssSelector("#T\\:toolslink > div:nth-child(2)")).click(); // Click on Tools
 	Thread.sleep(4000);
@@ -37,18 +38,19 @@ public class DisableAndEnableUsers extends UtilityClass{
 	Thread.sleep(4000);
 	
 	driver.findElement(By.id("T:gWYes")).click(); //click Yes to continue
-	Thread.sleep(10000);
+	Thread.sleep(20000);
 	  
-	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div[2]/div/div/button[4]")).click();//click user management tab
-	Thread.sleep(9000);
+	driver.findElement(By.cssSelector("button.btn:nth-child(4)")).click();//click user management tab
+	Thread.sleep(15000);
 	
 	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[4]/div/table/tbody/tr[9]/td[2]/a")).click();//click on user Harris Wood
 	Thread.sleep(20000);
 	
-	((JavascriptExecutor)driver).executeScript("scroll(0,200)"); // Scroll down
-	Thread.sleep(3000);
-	
-	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[1]/div/div[2]/div/form/div/button[4]")).click(); // Click the Disable button
+	JavascriptExecutor je = (JavascriptExecutor) driver; 
+		
+	WebElement disableElem = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[1]/div/div[2]/div/form/div/button[4]")); // Click the Disable button
+	je.executeScript("arguments[0].scrollIntoView(true);", disableElem);
+	disableElem.click();
 	Thread.sleep(9000);
 	
 	WebElement confirmBtn1 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[6]/div/div/div[3]/button[2]")); // Highlight confirm btn and click
@@ -59,13 +61,23 @@ public class DisableAndEnableUsers extends UtilityClass{
 	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/button[2]")).click(); //Click the Back btn
 	Thread.sleep(9000);
 	
+	
+	WebElement disable = driver.findElement(By.cssSelector("tr.ng-scope:nth-child(10) > td:nth-child(1) > center:nth-child(1) > span:nth-child(1)"));
+	
+	if(disable.isDisplayed()) {
+		System.out.println("Harris Wood is disabled");
+	}else {
+		System.out.println("Harris Wood is enabled");
+	}
+	
+	
+	// Enabling User
 	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[4]/div/table/tbody/tr[9]/td[2]/a")).click(); // Click on Harris Wood to Enable User
-	Thread.sleep(9000);
+	Thread.sleep(9000);  
 	
-	((JavascriptExecutor)driver).executeScript("scroll(0,500)"); // Scroll down
-	Thread.sleep(3000);
-	
-	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[1]/div/div[2]/div/form/div/button[3]")).click(); // Click on Enable
+	WebElement enableElem = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[1]/div/div[2]/div/form/div/button[3]")); // Click on Enable
+	je.executeScript("arguments[0].scrollIntoView(true);", enableElem);
+	enableElem.click();
 	Thread.sleep(9000);
 	
 	WebElement confirmBtn2 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[7]/div/div/div[3]/button[2]")); // Highlight confirm btn and click
@@ -75,6 +87,27 @@ public class DisableAndEnableUsers extends UtilityClass{
 	
 	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/button[2]")).click(); //Click the Back btn
 	Thread.sleep(9000);
+	
+	WebElement enable = driver.findElement(By.cssSelector("tr.ng-scope:nth-child(10) > td:nth-child(1) > center:nth-child(1) > span:nth-child(1)"));
+	
+	if(!enable.isDisplayed()) {
+		System.out.println("Harris Wood is disabled");
+	}else {
+		System.out.println("Harris Wood is enabled");
+	}
+	
+	// Org. Admin Logs out
+	driver.findElement(By.cssSelector("#link-menu > span:nth-child(2)")).click();//click on links
+	Thread.sleep(2000);
+	
+	driver.findElement(By.cssSelector("li.dropdown:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1) > span:nth-child(2)")).click();//click on MyGinnieMae Portal
+	Thread.sleep(3000);
+	
+	driver.findElement(By.cssSelector(".fa-icon-lock")).click();//Click on the PadLock 
+	demoLib.customWait(3);
+	
+	driver.findElement(By.cssSelector(".lock")).click();//Click on the Logout button
+	demoLib.customWait(5);
 	}
 	
 	

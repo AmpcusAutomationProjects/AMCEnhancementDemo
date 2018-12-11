@@ -17,8 +17,8 @@ public class AccessVerification extends UtilityClass {
 		Thread.sleep(1000);
 		demoLib.fluentWait(By.id("T:j_id__ctru15pc14")).click(); // Click on Login
 
-		demoLib.fluentWait(By.id("username")).sendKeys("username"); // Enter UserName
-		demoLib.fluentWait(By.id("password")).sendKeys("password"); // Password
+		demoLib.fluentWait(By.id("username")).sendKeys(username); // Enter UserName
+		demoLib.fluentWait(By.id("password")).sendKeys(password); // Password
 		demoLib.fluentWait(By.cssSelector(".submit")).click(); // Click on Login
 		demoLib.fluentWait(By.xpath("/html/body/div[1]/div/form/div[2]/div[1]/div[1]/div/div/div[2]/a/div[2]")).click(); // Click
 																															// on
