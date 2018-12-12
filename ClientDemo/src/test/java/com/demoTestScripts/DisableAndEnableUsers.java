@@ -61,17 +61,8 @@ public class DisableAndEnableUsers extends UtilityClass{
 	Thread.sleep(9000);
 	
 	
-	WebElement disable = driver.findElement(By.cssSelector("tr.ng-scope:nth-child(10) > td:nth-child(1) > center:nth-child(1) > span:nth-child(1)"));
-	
-	if(disable.isDisplayed()) {
-		System.out.println("User Harris Wood is Disabled");
-	}else {
-		System.out.println("User Harris Wood is Enabled");
-	}
-	
-	
 	// Enabling User
-	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[4]/div/table/tbody/tr[9]/td[2]/a")).click(); // Click on Harris Wood to Enable User
+	driver.findElement(By.cssSelector("tr.ng-scope:nth-child(9) > td:nth-child(2) > a:nth-child(1)")); //ClickHarris Wood to Enable User
 	Thread.sleep(9000);  
 	
 	WebElement enableElem = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[3]/div/div[1]/div/div[2]/div/form/div/button[3]")); // Click on Enable
@@ -87,13 +78,6 @@ public class DisableAndEnableUsers extends UtilityClass{
 	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/button[2]")).click(); //Click the Back btn
 	Thread.sleep(9000);
 	
-	WebElement enable = driver.findElement(By.cssSelector("tr.ng-scope:nth-child(9) > td:nth-child(1)"));
-	                                     
-	if(enable.isDisplayed()) {
-		System.out.println("User Harris Wood is Enabled");
-	}else {
-		System.out.println(" User Harris Wood is Disabled");
-	}
 	
 	// Org. Admin Logs out
 	driver.findElement(By.cssSelector("#link-menu > span:nth-child(2)")).click();//click on links
