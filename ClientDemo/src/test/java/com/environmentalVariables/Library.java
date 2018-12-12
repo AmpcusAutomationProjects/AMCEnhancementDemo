@@ -50,7 +50,7 @@ public class Library {
 					System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 					driver = new ChromeDriver();
 					driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-					driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+					driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 					driver.manage().window().maximize();
 				} catch (Exception e) {
 					logger.error("Error- ", e);
@@ -66,7 +66,7 @@ public class Library {
 					System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver.exe");
 					driver = new FirefoxDriver();
 					driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-					driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+					driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 					driver.manage().window().maximize();
 				} catch (Exception e) {
 					logger.error("Error- ", e);
@@ -90,8 +90,8 @@ public class Library {
 					System.setProperty("webdriver.ie.driver",
 							"C:\\Users\\joseph.quansah\\eclipse-workspace\\contineousIntegration\\src\\test\\resources\\IEDriverServer.exe");
 					driver = new InternetExplorerDriver(cap);
-					driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-					driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+					driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 					driver.manage().window().maximize();
 				} catch (Exception e) {
 					logger.error("Error- ", e);

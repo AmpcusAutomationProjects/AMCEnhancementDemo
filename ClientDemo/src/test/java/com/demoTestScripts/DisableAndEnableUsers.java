@@ -36,10 +36,10 @@ public class DisableAndEnableUsers extends UtilityClass{
 	driver.findElement(By.id("T:ti1:0:ti2:0:ti3:3:linkGenWrn")).click(); //click on amc
 	Thread.sleep(2000);
 	
-	driver.findElement(By.id("T:gWYes")).click(); //click Yes to continue
-	Thread.sleep(20000);
+	demoLib.fluentWait(By.id("T:gWYes")).click(); //click Yes to continue
+	Thread.sleep(60000);
 	  
-	driver.findElement(By.cssSelector("button.btn:nth-child(4)")).click();//click user management tab
+	demoLib.fluentWait(By.cssSelector("button.btn:nth-child(4)")).click();//click user management tab
 	Thread.sleep(15000);
 	
 	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[4]/div/table/tbody/tr[9]/td[2]/a")).click();//click on user Harris Wood
@@ -64,9 +64,9 @@ public class DisableAndEnableUsers extends UtilityClass{
 	WebElement disable = driver.findElement(By.cssSelector("tr.ng-scope:nth-child(10) > td:nth-child(1) > center:nth-child(1) > span:nth-child(1)"));
 	
 	if(disable.isDisplayed()) {
-		System.out.println("Harris Wood is disabled");
+		System.out.println("User Harris Wood is Disabled");
 	}else {
-		System.out.println("Harris Wood is enabled");
+		System.out.println("User Harris Wood is Enabled");
 	}
 	
 	
@@ -87,12 +87,12 @@ public class DisableAndEnableUsers extends UtilityClass{
 	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/button[2]")).click(); //Click the Back btn
 	Thread.sleep(9000);
 	
-	WebElement enable = driver.findElement(By.cssSelector("tr.ng-scope:nth-child(10) > td:nth-child(1) > center:nth-child(1) > span:nth-child(1)"));
-	
-	if(!enable.isDisplayed()) {
-		System.out.println("Harris Wood is disabled");
+	WebElement enable = driver.findElement(By.cssSelector("tr.ng-scope:nth-child(9) > td:nth-child(1)"));
+	                                     
+	if(enable.isDisplayed()) {
+		System.out.println("User Harris Wood is Enabled");
 	}else {
-		System.out.println("Harris Wood is enabled");
+		System.out.println(" User Harris Wood is Disabled");
 	}
 	
 	// Org. Admin Logs out
