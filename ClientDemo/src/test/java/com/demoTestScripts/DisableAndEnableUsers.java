@@ -22,20 +22,19 @@ public class DisableAndEnableUsers extends UtilityClass{
 
 	 
 	driver.findElement(By.id("username")).sendKeys(username); // Enter UserName
-	Thread.sleep(3000);
+	Thread.sleep(2000);
 	 
 	driver.findElement(By.id("password")).sendKeys(password); // Password
-	Thread.sleep(3000); 
-	
-	//driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/fieldset/input[6]")).click(); //Click Login   
-	demoLib.fluentWait(By.xpath("/html/body/div/div[3]/div/div[2]/form/fieldset/input[6]")).click(); // Click Login
+	Thread.sleep(2000); 
+	 
+	demoLib.fluentWait(By.xpath("/html/body/div/div[3]/div/div[2]/form/fieldset/input[6]")).click(); // Click Login btn
 	Thread.sleep(20000);
 	
 	demoLib.fluentWait(By.cssSelector("#T\\:toolslink > div:nth-child(2)")).click(); // Click on Tools
-	Thread.sleep(4000);
+	Thread.sleep(2000);
 	
 	driver.findElement(By.id("T:ti1:0:ti2:0:ti3:3:linkGenWrn")).click(); //click on amc
-	Thread.sleep(4000);
+	Thread.sleep(2000);
 	
 	driver.findElement(By.id("T:gWYes")).click(); //click Yes to continue
 	Thread.sleep(20000);
