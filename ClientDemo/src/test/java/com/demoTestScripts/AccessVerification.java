@@ -50,7 +50,7 @@ public class AccessVerification extends UtilityClass {
 	public Object[][] passData()
 
 	{
-		ExcelRead merl = new ExcelRead("C:\\Users\\joseph.quansah\\git\\AMCEnhancementDemoRepo\\ClientDemo\\DataProvider\\data2.xlsx");
+		ExcelRead merl = new ExcelRead("");
 
 		int rows = merl.getRollCount(0);
 

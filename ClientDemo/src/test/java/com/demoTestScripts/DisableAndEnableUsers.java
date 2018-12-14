@@ -97,7 +97,7 @@ public class DisableAndEnableUsers extends UtilityClass {
 
 	{
 		ExcelRead merl = new ExcelRead(
-				"C:\\Users\\joseph.quansah\\git\\AMCEnhancementDemoRepo\\ClientDemo\\DataProvider\\data.xlsx");
+				"");
 
 		int rows = merl.getRollCount(0);
 
