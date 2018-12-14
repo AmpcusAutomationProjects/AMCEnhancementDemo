@@ -13,7 +13,7 @@ public class AccessVerification extends UtilityClass {
 	@Test(dataProvider = "wordpressData")
 	public void accessVerificationTest(String username, String password) throws Exception {
 
-		driver.get("https://myuat.ginniemae.gov"); // GinnieMae Portal
+		driver.get(""); // GinnieMae Portal
 		Thread.sleep(1000);
 		demoLib.fluentWait(By.id("T:j_id__ctru15pc14")).click(); // Click on Login
 

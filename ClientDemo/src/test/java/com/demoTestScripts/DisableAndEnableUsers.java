@@ -14,7 +14,7 @@ public class DisableAndEnableUsers extends UtilityClass {
 	@Test(dataProvider = "wordpressData")
 	public void disable_And_Enable_User(String username, String password) throws Exception {
 
-		driver.get("https://myuat.ginniemae.gov");
+		driver.get("");
 		Thread.sleep(4000);
 
 		driver.findElement(By.id("T:j_id__ctru15pc14")).click(); // Click on Login
