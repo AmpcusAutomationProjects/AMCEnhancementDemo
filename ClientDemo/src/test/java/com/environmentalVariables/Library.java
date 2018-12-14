@@ -50,7 +50,7 @@ public class Library {
 					System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 					driver = new ChromeDriver();
 					driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-					driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().pageLoadTimeout(70, TimeUnit.SECONDS);
 					driver.manage().window().maximize();
 				} catch (Exception e) {
 					logger.error("Error- ", e);

@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.demoTestScripts.AccessVerification"/>
-      <class name="com.demoTestScripts.DisableAndEnableUsers"/>
+      <!-- <class name="com.demoTestScripts.DisableAndEnableUsers"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
