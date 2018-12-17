@@ -12,6 +12,9 @@ public class AccessVerification extends UtilityClass {
 
 	@Test(dataProvider = "wordpressData")
 	public void accessVerificationTest(String username, String password) throws Exception {
+		
+		
+		
 
 		driver.get(""); // GinnieMae Portal
 		Thread.sleep(1000);

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demoTestScripts.DisableAndEnableUsers">
+      <class name="com.demoTestScripts.AccessVerification">
         <methods>
           <include name="beforeTest"/>
           <include name="afterAllTestComplete"/>
-          <include name="disable_And_Enable_User" invocation-numbers="0"/>
+          <include name="accessVerificationTest" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- com.demoTestScripts.DisableAndEnableUsers -->
+      </class> <!-- com.demoTestScripts.AccessVerification -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
