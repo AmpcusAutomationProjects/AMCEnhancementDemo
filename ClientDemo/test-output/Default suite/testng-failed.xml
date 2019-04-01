@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demoTestScripts.AccessVerification">
+      <class name="com.craigListJob.CraigListVA">
         <methods>
+          <include name="getVAData"/>
           <include name="beforeTest"/>
           <include name="afterAllTestComplete"/>
-          <include name="accessVerificationTest" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- com.demoTestScripts.AccessVerification -->
+      </class> <!-- com.craigListJob.CraigListVA -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

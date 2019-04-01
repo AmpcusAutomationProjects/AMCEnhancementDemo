@@ -14,7 +14,7 @@ public class DisableAndEnableUsers extends UtilityClass {
 	@Test(dataProvider = "wordpressData")
 	public void disable_And_Enable_User(String username, String password) throws Exception {
 
-		driver.get("");
+		driver.get("http://myuat.ginniemae.gov");
 		Thread.sleep(4000);
 
 		driver.findElement(By.id("T:j_id__ctru15pc14")).click(); // Click on Login
@@ -80,8 +80,7 @@ public class DisableAndEnableUsers extends UtilityClass {
 	public Object[][] passData()
 
 	{
-		ExcelRead merl = new ExcelRead(
-				"");
+		ExcelRead merl = new ExcelRead("C:\\Users\\joseph.quansah\\git\\AMCEnhancementDemoRepo\\ClientDemo\\DataProvider\\data.xlsx");
 
 		int rows = merl.getRollCount(0);
 
